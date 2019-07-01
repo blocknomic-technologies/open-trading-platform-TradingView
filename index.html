@@ -1,0 +1,78 @@
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div id="tradingview_85e85"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener" target="_blank"><span class="blue-text">Charts</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        const urlParams = new URLSearchParams(window.location.search);
+        let symbol = urlParams.get('symbol');
+        let exchange = urlParams.get('exchange');
+
+        if (exchange === 'bitmex') {
+            new TradingView.widget({
+                "autosize": true,
+                "symbol": `${symbol}`,
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "Dark",
+                "style": "1",
+                "locale": "in",
+                "toolbar_bg": "rgba(12, 52, 61, 1)",
+                "enable_publishing": true,
+                "withdateranges": true,
+                "hide_side_toolbar": false,
+                "allow_symbol_change": true,
+                "container_id": "tradingview_85e85"
+            });
+        } else if (exchange === 'bitfinex') {
+            new TradingView.widget({
+                "autosize": true,
+                "symbol": `${symbol}`,
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "Dark",
+                "style": "1",
+                "locale": "in",
+                "toolbar_bg": "rgba(12, 52, 61, 1)",
+                "enable_publishing": true,
+                "withdateranges": true,
+                "hide_side_toolbar": false,
+                "allow_symbol_change": true,
+                "container_id": "tradingview_85e85"
+            });
+        } else if (exchange === 'binance') {
+            new TradingView.widget({
+                "autosize": true,
+                "symbol": `${symbol}`,
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "Dark",
+                "style": "1",
+                "locale": "in",
+                "toolbar_bg": "rgba(12, 52, 61, 1)",
+                "enable_publishing": true,
+                "withdateranges": true,
+                "hide_side_toolbar": false,
+                "allow_symbol_change": true,
+                "container_id": "tradingview_85e85"
+            });
+        } else if (exchange === 'bequant') {
+            new TradingView.widget({
+                "autosize": true,
+                "symbol": `${symbol}`,
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "Dark",
+                "style": "1",
+                "locale": "in",
+                "toolbar_bg": "rgba(12, 52, 61, 1)",
+                "enable_publishing": true,
+                "withdateranges": true,
+                "hide_side_toolbar": false,
+                "allow_symbol_change": true,
+                "container_id": "tradingview_85e85"
+            });
+        }
+    </script>
+</div>
+<!-- TradingView Widget END -->
